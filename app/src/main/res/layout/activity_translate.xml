@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".translate">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="71dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="284dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="28dp"
+        android:text="返回"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/lookText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Sentence"
+        android:layout_width="233dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Nice to meet you"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="90dp"
+        android:text=">> 例句"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="328dp"
+        android:layout_height="416dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Example"></ListView>
+
+</android.support.constraint.ConstraintLayout>

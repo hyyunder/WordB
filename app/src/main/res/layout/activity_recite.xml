@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recite">
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:text="加入生词本"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="85dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginStart="10dp"
+        android:text="下一单词"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="71dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="276dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="30dp"
+        android:text="返回"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/lookText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Hello"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BritishPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="84dp"
+        android:text="英"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BritishProDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="84dp"
+        android:text="Hello"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AmericaPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="84dp"
+        android:text="美"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AmericaProDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="202dp"
+        android:layout_marginTop="84dp"
+        android:text="Hello"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="128dp"
+        android:text=">> 基本释义"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MessageDetail"
+        android:layout_width="301dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="172dp"
+        android:text="Hello"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="236dp"
+        android:text=">> 例句"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="328dp"
+        android:layout_height="271dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Example"></ListView>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="82dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="55dp"
+        android:text="上一单词"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
